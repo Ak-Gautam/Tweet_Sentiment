@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="css/utilities.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+    <title>Sent. API</title>
+</head>
+<body>
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Sentiment Analyzer</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <!-- <li><a href="#">About</a></li> -->
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- end navbar -->
+    <!-- Input -->
+    <section class="input">
+        <div class="container grid">
+            <div class="input-text">
+                <h1>Analyze Tweet Sentiments</h1>
+                <p>Enter a tweet to analyze its sentiment. Only works best
+                    with transport related tweets in English. Result will
+                    be positive or negative only.</p>
+                    <a href="https://github.com/Gautam-flash/Tweet_Sentiment" class="btn btn-outline">Read More</a>
+            </div>
+            <div class="input-form card">
+                <h2>Try it</h2>
+                <form action="{{url_for('predict')}}" method="POST">
+                    <div class="form-control">
+                        <input type="text" name="Tweet" placeholder="Tweet-text" required>
+                    </div>
+                    <input type="submit" value="Analyze" class="btn btn-primary">
+                </form>
+                <h2>{{prediction_text}}</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h2>Sentiment Analyzer</h2>
+                <p>&copy; 2021 Akshay Gautam</p>
+            </div>
+            <!-- <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                </ul>
+            </nav> -->
+            <div class="social">
+                <a href="#"><i class="fab fa-github fa-3x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-3x"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in fa-3x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
