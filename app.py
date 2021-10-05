@@ -17,7 +17,10 @@ def pred_sent(text):
     tw = tokenizer.texts_to_sequences([text])
     tw = pad_sequences(tw,maxlen=200)
     prediction = int(model.predict(tw).round().item())
-    return prediction
+    if prediction == 1:
+        return 'Negative'
+    else:
+        return 'Positive'
 
 @app.route('/')
 def home():
