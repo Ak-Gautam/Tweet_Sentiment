@@ -91,6 +91,11 @@ img {
     gap: 30px;
 }
 
+.input-text {
+    position : relative;
+    animation: slideInFromLeft 1s ease-in;
+}
+
 .input-form {
     position: relative;
     height: 350px;
@@ -118,7 +123,7 @@ img {
 }
 
 .card h2 {
-    font-size: 30px;
+    font-size: 3 0px;
     text-align: center;
 }
 
@@ -199,9 +204,29 @@ img {
 
 .footer .social a {
     margin: 0 10px;
-    color: black;
+    color: snow;
 }
-/* 
+
+.fa-github:hover {
+    color: #000000;
+  }
+.fa-twitter:hover {
+    color: #00aced;
+  }
+
+.fa-instagram:hover {
+    color: #e1306c;
+  }
+
+.fa-linkedin-in:hover {
+    color: #0077B5;
+  }
+.fa-envelope-open:hover {
+    color: crimson;
+  }
+
+
+  /* 
 .footer nav ul li {
     padding: 5px;
     display: block;
@@ -215,6 +240,26 @@ img {
     background-color: #333;
     transform: translateY(-3px);
 } */
+
+/* Animation */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}   
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 
 .bg-dark,
 .btn-dark {

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- <link rel="stylesheet" href="css/utilities.css"> -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+    <!-- <link rel="stylesheet" type="text/css" href="/static/style.css"/> -->
     <title>Sent. API</title>
 </head>
 <body>
@@ -15,16 +16,16 @@
             <h1 class="logo">Sentiment Analyzer</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#Home">Home</a></li>
                     <!-- <li><a href="#">About</a></li> -->
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </div>
     <!-- end navbar -->
     <!-- Input -->
-    <section class="input">
+    <section class="input" id="Home">
         <div class="container grid">
             <div class="input-text">
                 <h1>Analyze Tweet Sentiments</h1>
@@ -59,11 +60,12 @@
                     <li><a href="docs.html">Docs</a></li>
                 </ul>
             </nav> -->
-            <div class="social">
-                <a href="#"><i class="fab fa-github fa-3x"></i></a>
-                <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
-                <a href="#"><i class="fab fa-twitter fa-3x"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in fa-3x"></i></a>
+            <div class="social" id="contact">
+                <a href="https://github.com/Gautam-flash/"><i class="fab fa-github fa-3x"></i></a>
+                <a href="https://twitter.com/Gautam_AK_"><i class="fab fa-twitter fa-3x"></i></a>
+                <a href="https://www.instagram.com/akshaygautam010/?utm_medium=copy_link"><i class="fab fa-instagram fa-3x"></i></a>
+                <a href="https://www.linkedin.com/in/akshay-kumar-gautam-880b361a5"><i class="fab fa-linkedin-in fa-3x"></i></a>
+                <a href="mailto:akshaygautam010@gmail.com" target="_blank"><i class="fas fa-envelope-open fa-3x"></i></a>
             </div>
         </div>
     </footer>
