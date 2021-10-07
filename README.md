@@ -4,6 +4,10 @@ Desc: Predicts sentiments of tweets.
 Author: '@Gautam-flash'
 ---
 
-This is a NLP project that analyses sentiment from tweets regarding American Airlines companies, it categorises tweets in either positive or negative sentiment.
+- This is a NLP project that analyses sentiment from tweets regarding American Airlines companies, it categorises tweets in either positive or negative sentiment.
 
-![Here is a screenshot](download.png)
+- Created API using Flask
+
+- Has a frontend made using HTML, CSS.
+
+
